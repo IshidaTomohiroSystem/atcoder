@@ -40,4 +40,4 @@
 *.db
 *.vsidx
 *.vsidx
-vs/
+.vs/
