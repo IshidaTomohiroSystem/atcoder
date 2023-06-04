@@ -50,7 +50,7 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -127,10 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="HelloWorld.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="tictactoe.cpp" />
+    <ClCompile Include="tictoctoe.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="HelloWorld.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="tictactoe.h" />
   </ItemGroup>
