@@ -1,5 +1,9 @@
-
+#include "scene.h"
 #include "tictactoe.h"
+
+#define CROSS "x"
+#define CIRCLE "o"
+#define GAMECOUNT 5
 
 TicTacToe::TicTacToe()
 {
@@ -18,12 +22,26 @@ void TicTacToe::Initialize()
 {
 }
 
+void TicTacToe::UnInitialize()
+{
+}
+
+void TicTacToe::Update()
+{
+	InputGame();
+}
+
+void TicTacToe::Draw()
+{
+	Result();
+}
+
 void TicTacToe::InputGame()
 {
 	while (true)
 	{
 		CircleCrossGameInput.clear();
-		std::cout << "oxƒQ[ƒ€‚ÌŒ‹‰Ê‚ðo‚©x‚Å“ü—Í‚µAEnter‚ð‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢" << std::endl;
+		std::cout << "oxã‚²ãƒ¼ãƒ ã®çµæžœã‚’oã‹xã§å…¥åŠ›ã—ã€Enterã‚’æŠ¼ã—ã¦ãã ã•ã„" << std::endl;
 		std::cin >> CircleCrossGameInput;
 		int count = 0;
 		if (CircleCrossGameInput.size() == 5)
@@ -43,7 +61,7 @@ void TicTacToe::InputGame()
 		}
 		else
 		{
-			std::cout << "“ü—Í‚·‚éŒÂ”‚Í" << GAMECOUNT << "‚Å‚·" << std::endl;
+			std::cout << "å…¥åŠ›ã™ã‚‹å€‹æ•°ã¯" << GAMECOUNT << "ã§ã™" << std::endl;
 		}
 	}
 }

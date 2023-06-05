@@ -1,31 +1,31 @@
-﻿//#pragma once
+//#pragma once
 
 #ifndef _TICTACTOE_H_		// include guard
 #define _TICTACTOE_H_
 
 #include <iostream>
 #include <List>
-#include<memory>
+#include "scene.h"
 
-using string = std::string;
-
-#define CROSS "x"
-#define CIRCLE "o"
-#define GAMECOUNT 5
-class TicTacToe
+class TicTacToe : public Scene
 {
 public:
 	TicTacToe();
 	~TicTacToe();
+	//TicTacToe(Scene _amount) : TicTacToe{} {};
 
 	void Create();
 	void Initialize();
+	void UnInitialize();
+	void Update();
+	void Draw();
+
 	void InputGame();
 	void Result();
 private:
 
-	string CircleCrossGameInput;
-	string CircleCrossGameResult;
+	std::string CircleCrossGameInput;
+	std::string CircleCrossGameResult;
 };
 
 
