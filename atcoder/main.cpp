@@ -8,6 +8,8 @@ int main()
 
 
     std::unique_ptr<Manager> manager = std::make_unique<Manager>();
+
+    // initialize
     manager->Initialize();
 
     // update
