@@ -15,17 +15,10 @@ public:
 	virtual void UnInitialize() = 0;
 	virtual void Update() = 0;
 	virtual void Draw() = 0;
-
-	static void UpdateAll();
-	static void DrawAll();
-	//static void ReleaseAll(void);
-	
-	//void Release(void);
 private:
 
 
 protected:
-	static std::vector<Scene> sceneList;
 };
 
 

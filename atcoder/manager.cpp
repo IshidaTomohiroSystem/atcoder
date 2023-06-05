@@ -13,10 +13,13 @@ Manager::~Manager()
 
 void Manager::Initialize()
 {
-    std::shared_ptr<TicTacToe> tictoctoe = std::make_shared<TicTacToe>();
-    tictoctoe->Create();
+    //std::shared_ptr<TicTacToe> tictoctoe = std::make_shared<TicTacToe>();
+    //tictoctoe->Create();
 
-    sceneManager->RegisterScene(tictoctoe);
+    std::shared_ptr<Overwrite> overwrite = std::make_shared<Overwrite>();
+    overwrite->Create();
+
+    sceneManager->RegisterScene(overwrite);
 }
 
 void Manager::UnInitialize()
