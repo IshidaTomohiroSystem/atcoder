@@ -35,9 +35,7 @@ void Overwrite::Update()
         }
         outputString = outputString + chars;
     }
-    //for (char c : chars) {
-    //    inputString.erase(std::remove(inputString.begin(), inputString.end(), c), inputString.end());
-    //}
+
     std::cin.get();
 
 }
