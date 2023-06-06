@@ -9,6 +9,7 @@
 #include "sceneManager.h"
 #include "tictactoe.h"
 #include "overwrite.h"
+#include "baseTS.h"
 
 class Manager
 {

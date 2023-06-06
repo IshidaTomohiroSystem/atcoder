@@ -16,10 +16,14 @@ void Manager::Initialize()
     //std::shared_ptr<TicTacToe> tictoctoe = std::make_shared<TicTacToe>();
     //tictoctoe->Create();
 
-    std::shared_ptr<Overwrite> overwrite = std::make_shared<Overwrite>();
-    overwrite->Create();
+    //std::shared_ptr<Overwrite> overwrite = std::make_shared<Overwrite>();
+    //overwrite->Create();
 
-    sceneManager->RegisterScene(overwrite);
+    std::shared_ptr<BaseTS> baseTS = std::make_shared<BaseTS>();
+    baseTS->Create();
+
+
+    sceneManager->RegisterScene(baseTS);
 }
 
 void Manager::UnInitialize()
