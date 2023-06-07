@@ -136,6 +136,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="manager.cpp" />
     <ClCompile Include="overwrite.cpp" />
+    <ClCompile Include="readingZero.cpp" />
     <ClCompile Include="scene.cpp" />
     <ClCompile Include="sceneManager.cpp" />
     <ClCompile Include="tictoctoe.cpp" />
@@ -146,6 +147,7 @@
     <ClInclude Include="main.h" />
     <ClInclude Include="manager.h" />
     <ClInclude Include="overwrite.h" />
+    <ClInclude Include="readingZero.h" />
     <ClInclude Include="scene.h" />
     <ClInclude Include="sceneManager.h" />
     <ClInclude Include="tictactoe.h" />

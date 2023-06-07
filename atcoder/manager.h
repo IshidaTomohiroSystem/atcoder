@@ -10,6 +10,7 @@
 #include "tictactoe.h"
 #include "overwrite.h"
 #include "baseTS.h"
+#include "readingZero.h"
 
 class Manager
 {

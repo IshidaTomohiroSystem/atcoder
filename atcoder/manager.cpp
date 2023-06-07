@@ -19,11 +19,14 @@ void Manager::Initialize()
     //std::shared_ptr<Overwrite> overwrite = std::make_shared<Overwrite>();
     //overwrite->Create();
 
-    std::shared_ptr<BaseTS> baseTS = std::make_shared<BaseTS>();
-    baseTS->Create();
+    //std::shared_ptr<BaseTS> baseTS = std::make_shared<BaseTS>();
+    //baseTS->Create();
+
+    std::shared_ptr<ReadingZero> readingZero = std::make_shared<ReadingZero>();
+    readingZero->Create();
 
 
-    sceneManager->RegisterScene(baseTS);
+    sceneManager->RegisterScene(readingZero);
 }
 
 void Manager::UnInitialize()
