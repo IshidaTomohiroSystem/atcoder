@@ -139,6 +139,7 @@
     <ClCompile Include="readingZero.cpp" />
     <ClCompile Include="scene.cpp" />
     <ClCompile Include="sceneManager.cpp" />
+    <ClCompile Include="stamp.cpp" />
     <ClCompile Include="tictoctoe.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +151,7 @@
     <ClInclude Include="readingZero.h" />
     <ClInclude Include="scene.h" />
     <ClInclude Include="sceneManager.h" />
+    <ClInclude Include="stamp.h" />
     <ClInclude Include="tictactoe.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -11,6 +11,7 @@
 #include "overwrite.h"
 #include "baseTS.h"
 #include "readingZero.h"
+#include "stamp.h"
 
 class Manager
 {

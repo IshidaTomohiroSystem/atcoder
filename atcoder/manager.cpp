@@ -22,11 +22,13 @@ void Manager::Initialize()
     //std::shared_ptr<BaseTS> baseTS = std::make_shared<BaseTS>();
     //baseTS->Create();
 
-    std::shared_ptr<ReadingZero> readingZero = std::make_shared<ReadingZero>();
-    readingZero->Create();
+    //std::shared_ptr<ReadingZero> readingZero = std::make_shared<ReadingZero>();
+    //readingZero->Create();
 
+    std::shared_ptr<Stamp> stamp = std::make_shared<Stamp>();
+    stamp->Create();
 
-    sceneManager->RegisterScene(readingZero);
+    sceneManager->RegisterScene(stamp);
 }
 
 void Manager::UnInitialize()
