@@ -27,7 +27,7 @@ private:
 
 	std::vector<std::vector<std::string>> quares;
 	std::vector<std::vector<std::string>> stampBottom;
-
+	bool judge;
 };
 
 
