@@ -12,6 +12,7 @@
 #include "baseTS.h"
 #include "readingZero.h"
 #include "stamp.h"
+#include "chemicalsExplosion.h"
 
 class Manager
 {

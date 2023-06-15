@@ -132,6 +132,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="baseTS.cpp" />
+    <ClCompile Include="chemicalsExplosion.cpp" />
     <ClCompile Include="helloWorld.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="manager.cpp" />
@@ -144,6 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="baseTS.h" />
+    <ClInclude Include="chemicalsExplosion.h" />
     <ClInclude Include="helloWorld.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="manager.h" />

@@ -25,10 +25,13 @@ void Manager::Initialize()
     //std::shared_ptr<ReadingZero> readingZero = std::make_shared<ReadingZero>();
     //readingZero->Create();
 
-    std::shared_ptr<Stamp> stamp = std::make_shared<Stamp>();
-    stamp->Create();
+    //std::shared_ptr<Stamp> stamp = std::make_shared<Stamp>();
+    //stamp->Create();
 
-    sceneManager->RegisterScene(stamp);
+    std::shared_ptr<ChemicalsExplosion> chemicalsExplosion = std::make_shared<ChemicalsExplosion>();
+    chemicalsExplosion->Create();
+
+    sceneManager->RegisterScene(chemicalsExplosion);
 }
 
 void Manager::UnInitialize()
