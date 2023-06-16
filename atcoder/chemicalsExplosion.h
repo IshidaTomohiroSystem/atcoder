@@ -23,27 +23,54 @@ public:
 	void Update();
 	void Draw();
 
-	class material
+	class Material
 	{
 	public:
-		material();
-		material(int a, int b, int c);
-		~material();
+		Material();
+		Material(int a, int b, int c);
+		~Material();
 
 		int A;
 		int B;
 		int C;
+
+		bool operator==(const Material& rhs) const
+		{
+			return (A == rhs.A && B == rhs.B && C == rhs.C);
+		}
+
+		bool operator!=(const Material& rhs) const
+		{
+			return (A != rhs.A || B != rhs.B || C != rhs.C);
+		}
+	};
+
+	class RecipeX
+	{
+	public:
+		RecipeX()
+		{
+			x = 0;
+			y = 0;
+		}
+		~RecipeX() {}
+
+		int x;
+		int y;
 	};
 
 private:
 
 	int CulMaxM(int chemicals);
+	void CulRecipeX();
 
 	int chemicalsMax;
 	int mMax;
 	int mNum;
 
-	std::vector<material> ChemicalsExplosionRecipe;
+	int chemicalCount;
+
+	std::vector<Material> ChemicalsExplosionRecipes;
 };
 
 
