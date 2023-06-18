@@ -28,10 +28,15 @@ void Manager::Initialize()
     //std::shared_ptr<Stamp> stamp = std::make_shared<Stamp>();
     //stamp->Create();
 
-    std::shared_ptr<ChemicalsExplosion> chemicalsExplosion = std::make_shared<ChemicalsExplosion>();
-    chemicalsExplosion->Create();
+    //std::shared_ptr<ChemicalsExplosion> chemicalsExplosion = std::make_shared<ChemicalsExplosion>();
+    //chemicalsExplosion->Create();
+    //
+    //sceneManager->RegisterScene(chemicalsExplosion);
 
-    sceneManager->RegisterScene(chemicalsExplosion);
+    std::shared_ptr<Snake> snake = std::make_shared<Snake>();
+    snake->Create();
+
+    sceneManager->RegisterScene(snake);
 }
 
 void Manager::UnInitialize()

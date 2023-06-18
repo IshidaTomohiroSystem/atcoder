@@ -13,6 +13,7 @@
 #include "readingZero.h"
 #include "stamp.h"
 #include "chemicalsExplosion.h"
+#include "snake.h"
 
 class Manager
 {

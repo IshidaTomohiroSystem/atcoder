@@ -16,11 +16,13 @@ public:
 
 	void Create();
 
+private:
+
 	void Initialize();
 	void UnInitialize();
 	void Update();
 	void Draw();
-private:
+
 	std::string inputString;
 	std::string outputString;
 

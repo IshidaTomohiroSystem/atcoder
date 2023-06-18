@@ -15,6 +15,8 @@ public:
 	//TicTacToe(Scene _amount) : TicTacToe{} {};
 
 	void Create();
+
+private:
 	void Initialize();
 	void UnInitialize();
 	void Update();
@@ -22,7 +24,6 @@ public:
 
 	void InputGame();
 	void Result();
-private:
 
 	std::string CircleCrossGameInput;
 	std::string CircleCrossGameResult;

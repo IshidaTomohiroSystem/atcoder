@@ -18,10 +18,7 @@ public:
 	~ChemicalsExplosion();
 
 	void Create();
-	void Initialize();
-	void UnInitialize();
-	void Update();
-	void Draw();
+
 
 	class Material
 	{
@@ -60,6 +57,10 @@ public:
 	};
 
 private:
+	void Initialize();
+	void UnInitialize();
+	void Update();
+	void Draw();
 
 	int CulMaxM(int chemicals);
 	void CulRecipeX();

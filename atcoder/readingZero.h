@@ -17,13 +17,15 @@ public:
 	ReadingZero();
 	~ReadingZero();
 
+private:
+
 	void Create();
 	void Initialize();
 	void UnInitialize();
 	void Update();
 	void Draw();
 
-private:
+
 	std::vector<std::string> inputList;
 	std::string result;
 };

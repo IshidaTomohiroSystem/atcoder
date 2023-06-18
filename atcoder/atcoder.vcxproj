@@ -140,6 +140,7 @@
     <ClCompile Include="readingZero.cpp" />
     <ClCompile Include="scene.cpp" />
     <ClCompile Include="sceneManager.cpp" />
+    <ClCompile Include="snake.cpp" />
     <ClCompile Include="stamp.cpp" />
     <ClCompile Include="tictoctoe.cpp" />
   </ItemGroup>
@@ -153,6 +154,7 @@
     <ClInclude Include="readingZero.h" />
     <ClInclude Include="scene.h" />
     <ClInclude Include="sceneManager.h" />
+    <ClInclude Include="snake.h" />
     <ClInclude Include="stamp.h" />
     <ClInclude Include="tictactoe.h" />
   </ItemGroup>

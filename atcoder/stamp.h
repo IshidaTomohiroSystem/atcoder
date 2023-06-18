@@ -16,12 +16,15 @@ public:
 	~Stamp();
 
 	void Create();
+
+
+private:
+
 	void Initialize();
 	void UnInitialize();
 	void Update();
 	void Draw();
 
-private:
 	void StampRotate(int count);
 	void JudgeStampSize();
 
