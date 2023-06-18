@@ -18,13 +18,25 @@ void ChemicalsExplosion::Create()
 
 void ChemicalsExplosion::Initialize()
 {
+	//hemicalCount = 0;
+	//hemicalsMax = 4;
+	//Max = CulMaxM(chemicalsMax);
+	//Num = 2;
+	//aterial mat1(1, 2, 3);
+	//aterial mat2(1, 2, 4);
+	//Material mat3(2, 4, 5);
+	//Material mat4(1, 2, 3);
+	//Material mat5(4, 5, 6);
+	//Material mat6(2, 5, 6);
+	//Material mat7(1, 3, 5);
+
 	chemicalCount = 0;
 	chemicalsMax = 6;
 	mMax = CulMaxM(chemicalsMax);
 	mNum = 7;
 	Material mat1(1, 2, 5);
 	Material mat2(2, 3, 5);
-	Material mat3(3, 4, 5);
+	Material mat3(2, 4, 5);
 	Material mat4(1, 2, 3);
 	Material mat5(4, 5, 6);
 	Material mat6(2, 5, 6);
